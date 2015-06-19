@@ -1,0 +1,31 @@
+<html>
+<head>
+
+	<!-- Main CSS style where we define our animations -->
+    <link rel="stylesheet" href="css/animation.css">
+    
+	<!-- Bootswatch Bootstrap to give our pages (buttons) beautiful look -->
+	<link rel="stylesheet" href="css/bootstrap.min.css">	
+	
+	<!-- JS for angular, ngRoute and ngAnimate -->
+	<script src="http://code.angularjs.org/1.3.0/angular.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.0/angular-route.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.0/angular-animate.js"></script>
+    
+    <!-- Main JS where we define our Angular Module along with routes and controllers -->
+	<script src="js/config.js"></script>
+
+</head>
+
+
+<body ng-app="transitionApp">   
+    
+	<div class="view {{ cssClass }}" ng-view></div>
+		
+    <div id="heading">
+        <h1>Animating with ngAnimate</h1>       
+    </div>		
+    
+</body>    
+    
+</html>
